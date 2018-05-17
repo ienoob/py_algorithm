@@ -9,7 +9,7 @@ from sort.bubble_sort import bubble_sort
 
 # 随机数组
 length = 10000
-array = [random.randint(0, length) for i in range(length)]
+array = [random.randint(0, length-1) for i in range(length)]
 
 start = time.clock()
 insert_sort(copy.deepcopy(array))
