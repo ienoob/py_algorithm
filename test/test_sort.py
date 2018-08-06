@@ -6,6 +6,7 @@ import copy
 from sort.insert_sort import insert_sort
 from sort.merge_sort import merge_sort
 from sort.bubble_sort import bubble_sort
+from sort.heap_sort import heap_basic_sort
 
 # 随机数组
 length = 10000
@@ -22,6 +23,10 @@ print("merge sort cost {}s".format(time.clock()-start))
 start = time.clock()
 bubble_sort(copy.deepcopy(array))
 print("bubble sort cost {}s".format(time.clock()-start))
+
+start = time.clock()
+heap_basic_sort(copy.deepcopy(array))
+print("heap sort cost {}s".format(time.clock()-start))
 
 start = time.clock()
 array.sort()
