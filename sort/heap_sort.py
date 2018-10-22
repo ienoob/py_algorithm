@@ -4,7 +4,6 @@
 """
     堆排序, 选择排序的一种方法
 """
-import math
 
 
 def heap_basic_sort(data):
@@ -14,7 +13,7 @@ def heap_basic_sort(data):
     """
     result = []
     build_heap(data)
-    while(len(data)):
+    while len(data):
         d = data[0]
         result.append(d)
         dl = data.pop()
@@ -24,7 +23,6 @@ def heap_basic_sort(data):
             break
         max_heap(data, 0)
     return result
-
 
 
 def build_heap(data):

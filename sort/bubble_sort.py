@@ -4,6 +4,7 @@
     冒泡算法
 """
 
+
 def bubble_sort(data):
     """
     :param data: list[Int]
